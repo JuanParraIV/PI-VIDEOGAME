@@ -112,7 +112,7 @@ export const About = () => {
         </div>
 
 
-        <h3 className={styles.heading}> backend<span>side</span></h3>
+        <h3 className={styles.heading}>backend <span>side</span></h3>
 
         <div className={styles.boxContainer}>
           <div className={styles.box}>
