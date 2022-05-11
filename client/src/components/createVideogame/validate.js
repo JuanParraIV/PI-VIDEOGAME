@@ -12,13 +12,13 @@ if (input.image && input.image.match(RegExesUrl) === null) {
 
   if (!input.released) errors.released = "Released Date is require";
 
-  if (input.platforms.length <= 0)
+  if (input.platforms.length === 0)
     errors.platforms = "Please select one platform at least";
 
-  if (input.genres.length <= 0)
+  if (input.genres.length === 0)
     errors.genres = "Please select one genre at least";
 
-  if (input.genres.length >= 5)
+  if (input.genres.length >= 4)
     errors.genres = "Please select maximum 4 genres";
 
   if (!input.image) errors.image = "Image is require";
