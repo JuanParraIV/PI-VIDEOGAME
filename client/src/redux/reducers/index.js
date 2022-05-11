@@ -71,9 +71,9 @@ export const rootReducer = (state = initialState, { type, payload }) => {
         videogames: payload === "All" ? allVideogamesCreated : createdFilter,
       };
     case ORDER_BY:
-      let loadedVideogames = state.allVideogames;
+      let loadedVideogames = state.videogames;
 
-      if (loadedVideogames.length === 0) loadedVideogames = state.videogames;
+      if (loadedVideogames.length === 0) loadedVideogames = state.allVideogames;
 
       let sortedBy = "";
 
@@ -126,6 +126,7 @@ export const rootReducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         videogames: sortedBy,
+
       };
     default:
       return state;

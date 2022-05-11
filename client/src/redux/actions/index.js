@@ -13,20 +13,18 @@ export const FILTER_CREATED = "FILTER_CREATED";
 export const ORDER_BY = 'ORDER_BY';
 
 
-export const getVideoGames = () => {
-  return  (dispatch) => {
-    axios
-      .get("/videogames")
-      .then((videogames) => {
+export const getVideoGames =  () => {
+  return  async (dispatch) => {
+    try{
+      const videogames= await axios.get("/videogames")
         dispatch({
           type: GET_VIDEOGAMES,
           payload: videogames.data,
         });
-      })
-      .catch((error) => {
+    }catch(error){
         console.log(error);
-      });
-  };
+      }
+    }
 };
 
 export const getGenres = () => {
