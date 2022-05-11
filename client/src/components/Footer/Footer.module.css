@@ -1,0 +1,39 @@
+.footer{
+    background: var(--purple);
+    text-align: center;
+}
+
+.footer .share{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer .credit{
+    padding: 1.5rem  1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.footer .credit span{
+    color: var(--yellow);
+}
+
+.btnIcon{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow);
+    color: var(--purple);
+    border-radius: .5rem;
+    transition: .3s;
+    cursor: pointer;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+  }

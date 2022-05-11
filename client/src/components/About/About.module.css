@@ -1,0 +1,129 @@
+section {
+  padding: 5rem 9%;
+}
+.heading {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 3vw;
+  color: var(--yellow);
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.heading span {
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .container .infoContainer {
+  flex: 1 1 42rem;
+  padding-top: 5rem;
+}
+
+.about .container .infoContainer h1{
+  padding-left: 40%;
+
+  font-size: 3rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.about .container .infoContainer span{
+  color: var(--purple);
+  padding-bottom: 1rem;
+}
+
+.about .container .infoContainer .boxContainer{
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .container .infoContainer .boxContainer .box {
+  flex: 1 1 20rem;
+  padding-left: 15rem;
+
+}
+
+.about .container .infoContainer .boxContainer .box h3{
+  font-size: 1.7rem;
+  color: var(--yellow);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.about .container .infoContainer .boxContainer .box span{
+  color: var(--purple);
+  font-weight: lighter;
+}
+
+.btnIcon{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+  color: var(--purple);
+  border-radius: .5rem;
+  transition: .3s;
+  cursor: pointer;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.skills .boxContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem; 
+}
+
+.skills .boxContainer .box{
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: .5rem;
+  background: #1a1a1a;
+}
+.skills .boxContainer .box:hover{
+  background-color: var(--purple);
+}
+
+.skills .boxContainer .box:hover h3{
+  color: var(--yellow);
+}
+
+.skills .boxContainer .box img{
+  height:7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .boxContainer .box h3{
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+.DetailedCardContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.DetailedCardContainer .containerMainImage {
+  flex: 1 1 32rem;
+}
+.DetailedCardContainer .containerMainImage img {
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 50rem;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.DetailedCardContainer .container {
+  padding-top: 10rem;
+  flex: 1 1 52rem;
+}
+.DetailedCardContainer .container h1 {
+
+  color: var(--yellow);
+  font-size: 4rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--purple);
+}
+.DetailedCardContainer .container span {
+  color: var(--yellow);
+  font-size: 3rem;
+  padding: 0.5rem 0;
+
+}
+
+.DetailedCardContainer .container p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+.btn:hover {
+  background-color: var(--purple);
+}
+.btn:hover .btnIcon {
+  color: var(--yellow);
+}
+.container .containerItems .btn {
+  background-color: var(--yellow);
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--purple);
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  color: var(--purple);
+}
+
+.container .containerItems .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--purple);
+  color: var(--yellow);
+  transition: 0.3s linear;
+  z-index: -1;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.container .containerItems .btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+.container .containerItems .btn:hover {
+  color: var(--yellow);
+  border: 0.2rem solid var(--yellow);
+  background-color: var(--purple);
+}
+.loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loaderContainer.fadeout {
+  top: -120%;
+}
+
+
+
+.stars {
+  color: gold;
+  -webkit-text-stroke: 0;
+}

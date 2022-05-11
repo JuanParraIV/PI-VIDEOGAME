@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'retro';
+  src: url('./assets/fonts/Perfect\ DOS\ VGA\ 437.ttf');
+}
+:root{
+  --purple:#551A8B;
+  --green:#00FF00;
+  --red:#FF0000;
+  --yellow:#F6C42C;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform:capitalize ;
+  transition:all .2s linear ;
+  -webkit-transition:all .2s linear ;
+  -moz-transition:all .2s linear ;
+  -ms-transition:all .2s linear ;
+  -o-transition:all .2s linear ;
+}
+*::selection{
+  background: var(--purple);
+  color: #fff;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+
+body{
+  background: #f7f7f7;
+}
+
+section{
+    padding: 5rem 9%; }
+
+
+
+
+

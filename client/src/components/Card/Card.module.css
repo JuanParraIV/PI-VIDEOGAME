@@ -1,0 +1,91 @@
+
+
+
+.container {
+    height: 32rem;
+    overflow:hidden;
+    position: relative;
+    
+}
+.boxImg {
+    width: auto;
+    height: 24.5rem;
+    overflow: hidden;
+    background-color: var(--purple);
+}
+.boxImg img{
+    float: left;
+    left: 0.5%;
+    width: 99%;
+    height:100%;
+    object-fit: cover;
+    border: 2px solid var(--purple);
+    margin: -2px 0 0 -2px;
+    position: relative;
+}
+.boxImg img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+.text{
+  position: absolute;
+  top: 260px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  color: var(--purple);
+  font-family: 'retro';
+
+}
+.text h3{
+  font-size: 2rem;
+  padding: 1.7rem 0 0 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+
+
+}
+.text h5{
+  justify-content: left;
+  align-items: center;
+  padding-top: 0.4rem;
+  padding-left: 0.7rem;
+  margin-bottom: -1rem;
+  font-size: 1.2rem;
+  color: var(--yellow);
+  margin-top: -10px;
+}
+.text p{
+    font-size: 1.2rem;
+    font-family: 'retro';
+    color: #000;
+    text-align: center;
+    margin-top: -10px;
+    float: right;
+    margin-right: 10px;
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+.stars {
+    color: gold;
+    -webkit-text-stroke: 0;
+}
+
+@font-face {
+    font-family: 'retro';
+    src: url('../../assets/fonts/Perfect\ DOS\ VGA\ 437.ttf');
+  }

@@ -1,0 +1,80 @@
+.paginateContainer {
+  display: flex;
+  flex-direction: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding-bottom: 5rem;
+
+}
+.paginateContainer p{
+    font-size: 1.5rem;
+    color: #F6C42C;
+}
+
+button{
+    cursor: pointer;
+}
+input{
+  text-align: center;
+    width: 3rem;
+    padding:0.3rem;
+    border: 1px solid #F6C42C;
+    color: #F6C42C;
+    border-radius: 5px;
+    background-color: #000;
+
+}
+
+.prevPageBtn{
+  padding: 0.5rem;
+  background-color: black;
+  border: 1px solid #F6C42C;
+  border-radius:.5rem ;
+  -webkit-border-radius:.5rem ;
+  -moz-border-radius:.5rem ;
+  -ms-border-radius:.5rem ;
+  -o-border-radius:.5rem ;
+}
+.nextPageBtn{
+  padding: 0.5rem;
+  background-color: black;
+  border: 1px solid #F6C42C;
+  border-radius:.5rem ;
+  -webkit-border-radius:.5rem ;
+  -moz-border-radius:.5rem ;
+  -ms-border-radius:.5rem ;
+  -o-border-radius:.5rem ;
+}
+.prevPageBtn:hover{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.nextPageBtn:hover{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+.prevPageBtnImage{
+   color: #F6C42C;
+   font-size: 1.5rem;
+   transform: rotateY(180deg);
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+}
+
+
+
+.nextPageBtnImage{
+    color: #F6C42C;
+    font-size: 1.5rem;
+}

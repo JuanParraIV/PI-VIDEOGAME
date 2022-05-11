@@ -1,0 +1,243 @@
+* {
+  font-family: "retro";
+}
+.CreateVideogame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: var(--purple);
+}
+.heading span {
+  color: var(--yellow);
+}
+.btn {
+  background-color: var(--yellow);
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--purple);
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--purple);
+  color: var(--yellow);
+  transition: 0.3s linear;
+  z-index: -1;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+.btn:hover {
+  background-color: var(--purple);
+}
+.btn:hover .btnIcon {
+  color: var(--yellow);
+}
+
+.row {
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  background: var(--purple);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.image {
+  flex: 1 1 10rem;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.row form {
+  flex: 1 1 50rem;
+  padding: 1rem;
+}
+
+.row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row form .inputBox input,
+.row form textarea {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  width: 100%;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.row form textarea {
+  color: var(--yellow);
+  resize: none;
+  width: 100%;
+  height: 15rem;
+  background: #000;
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.6rem;
+  color: var(--yellow);
+  text-transform: none;
+  margin: 0.7rem 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.row form .btn {
+  background-color: var(--yellow);
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--purple);
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  color: var(--purple);
+}
+
+.row form .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--purple);
+  color: var(--yellow);
+  transition: 0.3s linear;
+  z-index: -1;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.row form .btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+.row form .btn:hover {
+  color: var(--yellow);
+  border: 0.2rem solid var(--yellow);
+  background-color: var(--purple);
+}
+.row form .btn:hover .btnIcon {
+  color: var(--yellow);
+}
+
+.formLabels {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  color: var(--yellow);
+}
+.formLabels span {
+  font-size: 1.3rem;
+  color: var(--red);
+}
+
+.Lists li {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 1rem 2rem;
+  color: var(--yellow);
+}
+.Lists li span {
+  font-size: 1.5rem;
+  color: var(--red);
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.Lists li span:hover {
+  color: #b38f7e;
+}
+
+.inputBox select {
+  border: 2px solid var(--yellow);
+  margin-top: 1.5rem;
+  background-color: var(--purple);
+  color: var(--yellow);
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.inputBox select:hover {
+  color: var(--purple);
+  background-color: var(--yellow);
+}
+
+.inputBox select option {
+  padding: 30px;
+}
+
+.inputBox p {
+  color: var(--red);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
