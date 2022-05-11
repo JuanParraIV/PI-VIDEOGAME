@@ -49,6 +49,11 @@
 
 
 }
+.text h3:hover{
+  color: var(--yellow);
+
+
+}
 .text h5{
   justify-content: left;
   align-items: center;

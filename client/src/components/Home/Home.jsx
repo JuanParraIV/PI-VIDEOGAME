@@ -47,7 +47,8 @@ const handleFilterCreated=(event) => {
 
 
   const handleSort=(event)=>{
-const results =dispatch(orderBy(event.target.value));
+    const {value} = event.target;
+const results =dispatch(orderBy(value));
 setSort(results);
     setPage(page);
   }
