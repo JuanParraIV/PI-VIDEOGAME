@@ -23,7 +23,7 @@ const { ENV } = require('./src/configs/config.js');
 
 
 // Syncing all the models at once.
-conn.sync({ force: false }).then(() => {
+conn.sync({ force: false }).then(() => {  
   server.listen(ENV.api_port, () => {
     console.log(`server is running on port ${ENV.api_port}`); // eslint-disable-line no-console
   });
